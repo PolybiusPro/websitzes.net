@@ -1,5 +1,42 @@
+/* imports */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap');
+
+/* media queries */
+/* X-Small devices (portrait phones, less than 576px) */
+@media (min-width: 576px) {
+  .tech-icon{
+    font-size: 0.5rem;
+  }
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (min-width: 768px) {
+  .tech-icon{
+    font-size: 0.75rem;
+  }
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (min-width: 992px) {
+  .tech-icon{
+    font-size: 1rem;
+  }
+}
+
+/* Large devices (desktops, less than 1200px) */
+@media (min-width: 1200px) {
+  .tech-icon{
+    font-size: 1.25rem;
+  }
+}
+
+/* X-Large devices (large desktops, less than 1400px) */
+@media (min-width: 1400px) {
+  .tech-icon{
+    font-size: 1.5rem;
+  }
+}
 
 /* Global */
 .nav-link {
@@ -10,6 +47,7 @@
 }
 body {
   font-family: 'Open Sans', sans-serif;
+  overflow-x: hidden;
 }
 h1 ,h2 ,h3 ,h4 {
   font-family: 'Ubuntu', sans-serif;
@@ -57,16 +95,30 @@ h1 ,h2 ,h3 ,h4 {
   position: absolute;
   top: 0;
   left: 0;
+  z-index: -2;
+}
+.origami{
+  position: absolute;
+  top: 520px;
+  left: 80%;
+  width: 200px;
+  opacity: 0.90;
   z-index: -1;
+  transform: rotate(-20deg);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
 }
 
 .landing-cta{
   width: 300px;
-  margin-top: 50px;
+  margin: 50px 0;
   padding: 30px 30px;
   background: rgba(255, 255, 255, 0.8);
   border-radius: 25px;
   border: 3px solid #5d5d5d;
+}
+.cta-btn, .cta-btn:hover{
+  border: 3px solid black;
 }
 /* Second section */
 .second-section{
@@ -82,6 +134,8 @@ h1 ,h2 ,h3 ,h4 {
   transition: transform 15s linear;
   transition: transform 15s linear, -webkit-transform 15s linear;
 }
+
+
 .description p {
   padding-top: 5%;
   font-size: 1.5rem;
@@ -107,9 +161,17 @@ h1 ,h2 ,h3 ,h4 {
 }
 /* Third section */
 .third-section {
-  padding: 0 5%;
+  padding: 0 15%;
   padding-bottom: 3%;
   font-size: 1.25rem;
+}
+.worker{
+  position: absolute;
+  right: 10px;
+  overflow: hidden;
+  height: 40%;
+  opacity: 0.8;
+  z-index: -1;
 }
 
 /* Footer */
