@@ -1,5 +1,5 @@
 /////////////////////////Carousel continuous///////////////////////////////////
-$('.carousel').carousel({interval: 1, wrap: true});
+$('.carousel').carousel({interval: 1, wrap: true, pause: false});
 
 //////////////////////////Carousel icon hide///////////////////////////////////
 $('.react-icon').click(()=>{

@@ -71,7 +71,6 @@ h1 ,h2 ,h3 ,h4 {
 /* Second section */
 .second-section{
   padding-bottom: 5%;
-  margin: 5% 0 2.5%;
   background: radial-gradient(#0275d8, #00ffc8);
   color: white;
 }
@@ -108,7 +107,8 @@ h1 ,h2 ,h3 ,h4 {
 }
 /* Third section */
 .third-section {
-  padding: 3% 5%;
+  padding: 0 5%;
+  padding-bottom: 3%;
   font-size: 1.25rem;
 }
 
