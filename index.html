@@ -7,6 +7,7 @@
   <title>WebSitzes.net</title>
   <link rel="icon" href="./src/newLogo.png">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
   <link rel="stylesheet" href="./styles.css">
 </head>
 
@@ -36,13 +37,16 @@
   </nav>
   <div class="first-section">
     <img class="hero-image" src="./src/hero.svg" alt="laptop">
-    <img class="origami" src="./src/origami.svg" alt="origami">
-    <h1 class="heading">Hi, I'm Wes. I'm a JavaScript Developer!</h1>
+    <img class="origami animate__animated" src="./src/origami.svg" alt="origami">
+    <h1 id="intro-heading" class="heading animate__animated">Hi, I'm Wes. I'm a JavaScript Developer!</h1>
     <div class="container-fluid">
       <div class="row">
+        <div class="col-6">
+
+        </div>
         <div class="col col-lg-6 col-md-6 col-sm-12 d-flex justify-content-center">
           <div class="landing-cta">
-            <h2>Let's Build It!</h2>
+            <h3>Let's Build It!</h3>
             <p class="info">If you're looking for the type of developer that lives and breathes code,
                I'm your man. See some of the projects I've worked on!
             </p>
@@ -127,7 +131,7 @@
         a web browser. It is built using Chrome's V8 JavaScript Engine.
       </p>
       <p class="db-description hidden">
-        MongoDB is a NoSQL that relies on JavaScript objects in order to store data.
+        MongoDB is a NoSQL database that relies on JavaScript objects in order to store data.
         This can be very useful when trying to scale applications horizontally.
       </p>
       <p class="docker-description hidden">
@@ -161,28 +165,34 @@
   </div>
   <div class="third-section">
     <div class="container-fluid">
-      <h2 class="heading">Accomplishments</h2>
-      <img class="worker" src="./src/worker.svg" alt="worker">
-      <p>
-        I've been working as a web developer since 2017, I began working with
-        basic HTML, CSS and Javascript before moving on to learning both sides of
-        development front-end and back-end and expanding my knowledge in both
-        areas.
-      </p>
-      <p>
-        During my time at <a href="https://furtrieve.com/">Furtrieve</a>,
-        I supervised programming GPS capable tracking devices for dogs, as well
-        as maintaining and building a full scale marketplace website. Other notable
-        accomplishments there included; building a local Network Attached
-        Storage, managing SEO, performance optimizations, and project management.
-      </p>
-      <p>
-        In the future, I hope to continue building applications that are visually
-        appealing and performant for clients. I believe web design and functionality
-        are very important and often times the website is the first thing a customer sees.
-        I aim to make the development process easier for both the client and the
-        customer.
-      </p>
+      <div class="row">
+        <div class="col-12 col-md-6 my-auto">
+          <h2 class="heading">Accomplishments</h2>
+          <p>
+            I've been working as a web developer since 2017, I began working with
+            basic HTML, CSS and Javascript before moving on to learning both sides of
+            development front-end and back-end and expanding my knowledge in both
+            areas.
+          </p>
+          <p>
+            During my time at <a href="https://furtrieve.com/">Furtrieve</a>,
+            I supervised programming GPS capable tracking devices for dogs, as well
+            as maintaining and building a full scale marketplace website. Other notable
+            accomplishments there included; building a local Network Attached
+            Storage, managing SEO, performance optimizations, and project management.
+          </p>
+          <p>
+            In the future, I hope to continue building applications that are visually
+            appealing and performant for clients. I believe web design and functionality
+            are very important and often times the website is the first thing a customer sees.
+            I aim to make the development process easier for both the client and the
+            customer.
+          </p>
+        </div>
+        <div id="worker" class="col-12 col-md-6">
+          <img class="worker" src="./src/worker.svg" alt="worker">
+        </div>
+      </div>
     </div>
   </div>
   <footer class="footer">

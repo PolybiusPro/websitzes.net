@@ -2,6 +2,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap');
 
+/* mixin */
+@keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
 /* media queries */
 /* X-Small devices (portrait phones, less than 576px) */
 @media (min-width: 576px) {
@@ -47,7 +57,7 @@
 }
 body {
   font-family: 'Open Sans', sans-serif;
-  overflow-x: hidden;
+  overflow-x: hidden !important;
 }
 h1 ,h2 ,h3 ,h4 {
   font-family: 'Ubuntu', sans-serif;
@@ -56,7 +66,7 @@ h1 ,h2 ,h3 ,h4 {
 .heading{
   padding-top: 2%;
   padding-bottom: 2%;
-  font-size: 2rem;
+  font-size: 2.5rem;
   text-align: center;
 }
 .title{
@@ -83,10 +93,7 @@ h1 ,h2 ,h3 ,h4 {
 /* First Section */
 .first-section {
   text-align: center;
-}
-
-.showcase-heading{
-  color: white;
+  padding-bottom: 2%;
 }
 
 .hero-image{
@@ -99,21 +106,17 @@ h1 ,h2 ,h3 ,h4 {
 }
 .origami{
   position: absolute;
-  top: 520px;
-  left: 80%;
-  width: 200px;
-  opacity: 0.90;
+  top: 550px;
+  right: 70%;
+  width: 20%;
   z-index: -1;
-  transform: rotate(-20deg);
-  -webkit-transform: scaleX(-1);
-  transform: scaleX(-1);
 }
 
 .landing-cta{
   width: 300px;
   margin: 50px 0;
   padding: 30px 30px;
-  background: rgba(255, 255, 255, 0.8);
+  background: rgba(255, 255, 255, 0.7);
   border-radius: 25px;
   border: 3px solid #5d5d5d;
 }
@@ -128,13 +131,14 @@ h1 ,h2 ,h3 ,h4 {
 }
 .technologies{
   text-align: center;
+  width: 100%;
+  padding: 30px 0;
 }
 .carousel-inner .carousel-item {
   transition: -webkit-transform 15s linear;
   transition: transform 15s linear;
   transition: transform 15s linear, -webkit-transform 15s linear;
 }
-
 
 .description p {
   padding-top: 5%;
@@ -147,31 +151,23 @@ h1 ,h2 ,h3 ,h4 {
   -o-animation: fadeIn ease 2s;
   -ms-animation: fadeIn ease 2s;
 }
-@keyframes fadeIn {
-  0% {
-    opacity:0;
-  }
-  100% {
-    opacity:1;
-  }
-}
 .info{
   padding-top: 3%;
   font-size: 1.25rem;
 }
 /* Third section */
 .third-section {
-  padding: 0 15%;
+  padding: 0 5%;
   padding-bottom: 3%;
   font-size: 1.25rem;
 }
 .worker{
-  position: absolute;
-  right: 10px;
-  overflow: hidden;
-  height: 40%;
-  opacity: 0.8;
-  z-index: -1;
+  text-align: center;
+  height: 100%;
+  padding-top: 10%;
+}
+#worker{
+  text-align: center;
 }
 
 /* Footer */
@@ -182,4 +178,30 @@ h1 ,h2 ,h3 ,h4 {
 .copyright{
   color: white;
   text-align: center;
+}
+
+/* About Page */
+#about-container{
+  background-image: url(./src/forest-pine.svg);
+}
+.profile{
+  margin-top: 15px;
+  height: 200px;
+  width: 200px;
+  border-radius: 100px;
+  align-self: center;
+}
+.card{
+  margin: 5% 0;
+  width: 75%;
+}
+
+.jumbotron{
+  background-color: #5bc0de;
+  padding: 2rem 2rem !important;
+  margin-bottom: 0;
+}
+.card-text{
+  padding: 1rem 2rem;
+  text-align: left;
 }

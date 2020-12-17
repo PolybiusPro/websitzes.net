@@ -7,35 +7,63 @@
   <title>WebSitzes.net</title>
   <link rel="icon" href="./src/newLogo.png">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
   <link rel="stylesheet" href="./styles.css">
 </head>
 
 <body>
-    <nav class="navbar navbar-dark navbar-expand-lg">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="./index.html">
-          <img src="./src/newLogo.png" alt="WebSitzes.net" class="logo">
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#hamburger" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="hamburger">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="./index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./projects.html">Projects</a>
-            </li>
-            <li class="nav-item active">
-              <a class="nav-link" href="./about.html">About <span class="sr-only">(current)</span></a>
-            </li>
-          </ul>
-        </div>
+  <nav class="navbar navbar-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="./index.html">
+        <img src="./src/newLogo.png" alt="WebSitzes.net" class="logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#hamburger" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="hamburger">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="./index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./projects.html">Projects</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="./about.html">About <span class="sr-only">(current)</span></a>
+          </li>
+        </ul>
       </div>
-    </nav>
-  <div class="page-into">
-    <h2 class="intro">This is the about page.</h2>
+    </div>
+  </nav>
+  <div id="about-container" class="container-fluid d-flex justify-content-center first-section">
+    <div class="card">
+      <div class="jumbotron">
+        <h1 id="about-me">About the Developer</h1>
+      </div>
+      <h3 class="card-header">Who am I?</h3>
+      <img src="./src/profile.png" class="card-img-top profile" alt="Wes Sitzes">
+      <div class="card-body">
+        <p>Wes Sitzes</p>
+        <h2 class="jumbotron">Music</h2>
+        <p class="card-text">
+          Firstly, I'm an avid music lover with a good sized library. Some of my favorites
+          include Radiohead, Metric, Pixies, Pink Floyd, Led Zeppelin, Bloodhound Gang and more. I would
+          say one of the best feelings in the world is finding a new song you can really enjoy.
+        </p>
+        <h2 class="jumbotron">Video Games</h2>
+        <p class="card-text">
+          Let me start off by giving a few interesting facts about myself. Firstly,
+          I'm an avid music lover with a pretty good sized library. Some of my favorites
+          are Radiohead, Metric, Pixies, Pink Floyd, Led Zeppelin, Bloodhound Gang and more.
+        </p>
+        <h2 class="jumbotron">Movies</h2>
+        <p class="card-text">
+          Let me start off by giving a few interesting facts about myself. Firstly,
+          I'm an avid music lover with a pretty good sized library. Some of my favorites
+          are Radiohead, Metric, Pixies, Pink Floyd, Led Zeppelin, Bloodhound Gang and more.
+        </p>
+      </div>
+    </div>
   </div>
   <footer class="footer">
     <div class="container">

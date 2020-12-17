@@ -1,3 +1,12 @@
+window.onload = () => {
+  setTimeout(() => {
+    $('#intro-heading').addClass('animate__flipInX');
+  }, 200);
+  setTimeout(() => {
+    $('.origami').addClass('animate__wobble');
+  }, 1000);
+}
+
 /////////////////////////Carousel continuous///////////////////////////////////
 $('.carousel').carousel({interval: 1, wrap: true, pause: false});
 
