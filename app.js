@@ -1,5 +1,6 @@
 window.onload = () => {
   setTimeout(() => {
+    $('#intro-heading').removeClass('hidden-heading');
     $('#intro-heading').addClass('animate__flipInX');
   }, 200);
   setTimeout(() => {
