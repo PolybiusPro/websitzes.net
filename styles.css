@@ -153,8 +153,13 @@ h1 ,h2 ,h3 ,h4 {
   transition: transform 15s linear, -webkit-transform 15s linear;
 }
 
+#close-btn:hover{
+  color: #00ffc8 !important;
+}
+
 .description p {
-  padding-top: 5%;
+  padding-top: 2.5%;
+  padding-bottom: 2.5%;
   font-size: 1.5rem;
 }
 .description *{
@@ -209,8 +214,8 @@ h1 ,h2 ,h3 ,h4 {
   align-self: center;
 }
 .card{
-  margin: 5% 0;
-  width: 80%;
+  margin-top: 2.5%;
+  width: 90%;
   opacity: 0.97;
   border: 3px solid black;
   border-radius: 10px 10px;
