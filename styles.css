@@ -74,6 +74,12 @@ h1 ,h2 ,h3 ,h4 {
 .title{
   font-weight: bold;
 }
+.bordered-btn, .bordered-btn:hover{
+  border: 3px solid black;
+}
+.whiteout{
+  color: white;
+}
 
 /* Navbar */
 .logo {
@@ -95,14 +101,14 @@ h1 ,h2 ,h3 ,h4 {
 /* First Section */
 .first-section {
   text-align: center;
-  padding-bottom: 2%;
+  padding: 3% 0 5%;
 }
 
 #intro-heading{
   background-color: #0275d8;
   color: white;
   margin: 3% auto;
-  width: 60%;
+  width: 70%;
   border-radius: 10px 10px;
   border: 3px solid black;
 }
@@ -124,15 +130,15 @@ h1 ,h2 ,h3 ,h4 {
 }
 
 .landing-cta{
-  width: 300px;
-  margin: 50px 0;
-  padding: 30px 30px;
+  width: 90%;
+  padding: 30px;
   background: rgba(255, 255, 255, 0.7);
   border-radius: 25px;
   border: 3px solid #5d5d5d;
 }
-.cta-btn, .cta-btn:hover{
-  border: 3px solid black;
+
+.landing-cta button{
+  margin: 2%;
 }
 /* Second section */
 .second-section{
@@ -236,10 +242,28 @@ h1 ,h2 ,h3 ,h4 {
   color: white;
   text-align: center;
 }
+
 .projects-container{
-  width: 60%;
-  margin: 2.5% auto;
+  margin-top: 3%;
+  width: 70%;
   padding: 0;
   border: 3px solid black;
   border-radius: 10px 10px;
+}
+.project{
+  padding: 2.5%;
+}
+.project-img{
+  width: 100%;
+  border-radius: 10px;
+}
+.my-gradient{
+  background: radial-gradient(#0275d8, #00ffc8);
+}
+.project-text{
+  padding-top: 15px;
+}
+.project-btns{
+  width: 70%;
+  margin: auto;
 }
