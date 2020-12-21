@@ -9,7 +9,7 @@ window.onload = () => {
 }
 
 /////////////////////////Carousel continuous///////////////////////////////////
-$('.carousel').carousel({interval: 1, wrap: true, pause: false});
+$('.carousel').carousel({interval: 1, wrap: true, pause: false, touch: true});
 
 //////////////////////////Carousel icon hide///////////////////////////////////
 $('.react-icon').click(()=>{
