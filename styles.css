@@ -99,7 +99,11 @@ h1 ,h2 ,h3 ,h4 {
 }
 
 /* First Section */
-.first-section {
+.first-section{
+  margin-bottom: 10%;
+}
+
+.about-section {
   text-align: center;
   padding: 3% 0 5%;
 }
