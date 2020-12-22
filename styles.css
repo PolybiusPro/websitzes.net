@@ -268,8 +268,8 @@ h1 ,h2 ,h3 ,h4 {
 .my-gradient{
   background: radial-gradient(#0275d8, #00ffc8);
 }
-.project-text{
-  padding-top: 15px;
+.project-column{
+  padding: 15px;
 }
 .project-btns{
   width: 70%;
