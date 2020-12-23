@@ -36,21 +36,21 @@
 /* Medium devices (tablets, less than 992px) */
 @media screen and (min-width: 992px) {
   .tech-icon, .description p, .third-section{
-    font-size: 1rem !important;
+    font-size: 1.25rem !important;
   }
 }
 
 /* Large devices (desktops, less than 1200px) */
 @media screen and (min-width: 1200px) {
   .tech-icon, .description p{
-    font-size: 1.25rem !important;
+    font-size: 1.5rem !important;
   }
 }
 
 /* X-Large devices (large desktops, less than 1400px) */
 @media screen and (min-width: 1400px) {
   .tech-icon, .description p{
-    font-size: 1.5rem !important;
+    font-size: 1.75rem !important;
   }
 }
 
