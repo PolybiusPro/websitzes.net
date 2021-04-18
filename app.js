@@ -8,22 +8,24 @@ window.onload = () => {
     const origami = document.getElementsByClassName('origami');
     origami[0].classList.add('animate__wobble');
   }, 1000);
+
+  //carousel with custom settings
+  const myCarousel = document.getElementById('myCarousel');
+  const carousel = new bootstrap.Carousel(myCarousel, {
+    slide: true,
+    ride: 'carousel',
+    interval: 1,
+    pause: false,
+    wrap: true,
+    keyboard: false,
+    touch: false
+  });
+
+  //start carousel
+  carousel.cycle();
 }
 
-//carousel with custom settings
-const myCarousel = document.getElementById('myCarousel');
-const carousel = new bootstrap.Carousel(myCarousel, {
-  slide: true,
-  ride: 'carousel',
-  interval: 1,
-  pause: false,
-  wrap: true,
-  keyboard: false,
-  touch: false
-});
 
-//start carousel
-carousel.cycle();
 
 //carousel functionality
 let icons = document.querySelectorAll('.tech-icon');
