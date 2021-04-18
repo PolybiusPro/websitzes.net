@@ -18,7 +18,8 @@ const carousel = new bootstrap.Carousel(myCarousel, {
   interval: 1,
   pause: false,
   wrap: true,
-  keyboard: false
+  keyboard: false,
+  touch: false
 });
 
 //start carousel
