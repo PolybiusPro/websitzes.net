@@ -1,0 +1,40 @@
+
+#about-container{
+  background-image: url(./src/forest-pine.svg);
+  background-repeat: no-repeat;
+}
+#about-me{
+  color: white;
+}
+
+.card{
+  margin: 2.5% 5%;
+  opacity: 0.97;
+  border: 3px solid black;
+  border-radius: 10px 10px;
+}
+
+.jumbotron{
+  background-color: #0275d8;
+  padding: 2rem 2rem !important;
+  margin-bottom: 0;
+  color: white;
+}
+.card-text{
+  padding: 1rem 1rem;
+  text-align: left;
+}
+
+
+.profile{
+  margin-top: 15px;
+  height: 200px;
+  width: 200px;
+  border-radius: 100px;
+  align-self: center;
+}
+
+.about-section {
+  text-align: center;
+  padding: 3% 0 5%;
+}

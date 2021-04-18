@@ -1,144 +1,125 @@
+//bird animation
 window.onload = () => {
   setTimeout(() => {
-    $('#intro-heading').removeClass('hidden-heading');
-    $('#intro-heading').addClass('animate__flipInX');
+    document.getElementById('intro-heading').classList.remove('hidden-heading');
+    document.getElementById('intro-heading').classList.add('animate__flipInX');
   }, 200);
   setTimeout(() => {
-    $('.origami').addClass('animate__wobble');
+    const origami = document.getElementsByClassName('origami');
+    origami[0].classList.add('animate__wobble');
   }, 1000);
 }
 
-/////////////////////////Carousel continuous///////////////////////////////////
-$('.carousel').carousel({interval: 1, wrap: true, pause: false});
-
-//////////////////////////Carousel icon hide///////////////////////////////////
-$('.react-icon').click(()=>{
-  $('.close-button').removeClass('hidden');
-  $('.react-description').removeClass('hidden');
-  $('.node-description').addClass('hidden');
-  $('.db-description').addClass('hidden');
-  $('.docker-description').addClass('hidden');
-  $('.github-description').addClass('hidden');
-  $('.git-description').addClass('hidden');
-  $('.stripe-description').addClass('hidden');
-  $('.do-description').addClass('hidden');
-  $('.bootstrap-description').addClass('hidden');
+//carousel with custom settings
+const myCarousel = document.getElementById('myCarousel');
+const carousel = new bootstrap.Carousel(myCarousel, {
+  slide: true,
+  ride: 'carousel',
+  interval: 1,
+  pause: false,
+  wrap: true,
+  keyboard: false
 });
 
-$('.node-icon').click(()=>{
-  $('.close-button').removeClass('hidden');
-  $('.react-description').addClass('hidden');
-  $('.node-description').removeClass('hidden');
-  $('.db-description').addClass('hidden');
-  $('.docker-description').addClass('hidden');
-  $('.github-description').addClass('hidden');
-  $('.git-description').addClass('hidden');
-  $('.stripe-description').addClass('hidden');
-  $('.do-description').addClass('hidden');
-  $('.bootstrap-description').addClass('hidden');
+//start carousel
+carousel.cycle();
+
+//carousel functionality
+let icons = document.querySelectorAll('.tech-icon');
+
+
+const skills = {
+  "react": "React.js is a front-end Javascript library that is made for building user interfaces. It was created and is maintained by Facebook.",
+
+  "node": "Node is an open source server environment that allows Javascript to run outside of a web browser. It is built using Chrome's V8 JavaScript Engine.",
+
+  "mongo": "MongoDB is a NoSQL database that relies on JavaScript objects in order to store data. This can be very useful when trying to scale applications horizontally.",
+
+  "docker": "Docker allows users to package code so that it's able to run on any system regardless of the Operating System that is currently running. This prevents dependency errors that can occur from working on a different system.",
+
+  "github": "GitHub is a web platform that allows users to collaborate with others on revising code and provides a repository where the code can be stored.",
+
+  "git": "Git allows developers to take control of their applications with version control. Make a mistake? Just roll back to an older version or discard your changes!",
+
+  "stripe": "The Stripe API allows businesses and developers to integrate credit and debit card transactions into their websites or applications.",
+
+  "digitalOcean": "Digital Ocean is a web platform that allows hosting and scaling of web applications.",
+
+  "bootstrap": "Bootstrap is a web development library that uses prebuilt components to simplify the design process and speed up development.",
+}
+
+const d = document.getElementById('description');
+let x = document.getElementById('close-btn');
+
+//add event listener to close button
+x.addEventListener('click', (e) =>{
+  hidden(true)
 });
 
-$('.db-icon').click(()=>{
-  $('.close-button').removeClass('hidden');
-  $('.react-description').addClass('hidden');
-  $('.node-description').addClass('hidden');
-  $('.db-description').removeClass('hidden');
-  $('.docker-description').addClass('hidden');
-  $('.github-description').addClass('hidden');
-  $('.git-description').addClass('hidden');
-  $('.stripe-description').addClass('hidden');
-  $('.do-description').addClass('hidden');
-  $('.bootstrap-description').addClass('hidden');
-});
+icons.forEach(icon => {
+  icon.addEventListener('click', (e) => {
+    handleClick(e)
+  })
+})
 
-$('.docker-icon').click(()=>{
-  $('.close-button').removeClass('hidden');
-  $('.react-description').addClass('hidden');
-  $('.node-description').addClass('hidden');
-  $('.db-description').addClass('hidden');
-  $('.docker-description').removeClass('hidden');
-  $('.github-description').addClass('hidden');
-  $('.git-description').addClass('hidden');
-  $('.stripe-description').addClass('hidden');
-  $('.do-description').addClass('hidden');
-  $('.bootstrap-description').addClass('hidden');
-});
+//hide
+function hidden(isHid){
+  isHid ? (d.classList.add('hidden'),  x.classList.add('hidden')) : (d.classList.remove('hidden'), x.classList.remove('hidden'));
+}
 
-$('.github-icon').click(()=>{
-  $('.close-button').removeClass('hidden');
-  $('.react-description').addClass('hidden');
-  $('.node-description').addClass('hidden');
-  $('.db-description').addClass('hidden');
-  $('.docker-description').addClass('hidden');
-  $('.github-description').removeClass('hidden');
-  $('.git-description').addClass('hidden');
-  $('.stripe-description').addClass('hidden');
-  $('.do-description').addClass('hidden');
-  $('.bootstrap-description').addClass('hidden');
-});
-
-$('.git-icon').click(()=>{
-  $('.close-button').removeClass('hidden');
-  $('.react-description').addClass('hidden');
-  $('.node-description').addClass('hidden');
-  $('.db-description').addClass('hidden');
-  $('.docker-description').addClass('hidden');
-  $('.github-description').addClass('hidden');
-  $('.git-description').removeClass('hidden');
-  $('.stripe-description').addClass('hidden');
-  $('.do-description').addClass('hidden');
-  $('.bootstrap-description').addClass('hidden');
-});
-
-$('.stripe-icon').click(()=>{
-  $('.close-button').removeClass('hidden');
-  $('.react-description').addClass('hidden');
-  $('.node-description').addClass('hidden');
-  $('.db-description').addClass('hidden');
-  $('.docker-description').addClass('hidden');
-  $('.github-description').addClass('hidden');
-  $('.git-description').addClass('hidden');
-  $('.stripe-description').removeClass('hidden');
-  $('.do-description').addClass('hidden');
-  $('.bootstrap-description').addClass('hidden');
-});
-
-$('.do-icon').click(()=>{
-  $('.close-button').removeClass('hidden');
-  $('.react-description').addClass('hidden');
-  $('.node-description').addClass('hidden');
-  $('.db-description').addClass('hidden');
-  $('.docker-description').addClass('hidden');
-  $('.github-description').addClass('hidden');
-  $('.git-description').addClass('hidden');
-  $('.stripe-description').addClass('hidden');
-  $('.do-description').removeClass('hidden');
-  $('.bootstrap-description').addClass('hidden');
-});
-
-$('.bootstrap-icon').click(()=>{
-  $('.close-button').removeClass('hidden');
-  $('.react-description').addClass('hidden');
-  $('.node-description').addClass('hidden');
-  $('.db-description').addClass('hidden');
-  $('.docker-description').addClass('hidden');
-  $('.github-description').addClass('hidden');
-  $('.git-description').addClass('hidden');
-  $('.stripe-description').addClass('hidden');
-  $('.do-description').addClass('hidden');
-  $('.bootstrap-description').removeClass('hidden');
-});
-
-$('.close-button').click(()=>{
-  $('.close-button').addClass('hidden');
-  $('.react-description').addClass('hidden');
-  $('.node-description').addClass('hidden');
-  $('.db-description').addClass('hidden');
-  $('.docker-description').addClass('hidden');
-  $('.github-description').addClass('hidden');
-  $('.git-description').addClass('hidden');
-  $('.stripe-description').addClass('hidden');
-  $('.do-description').addClass('hidden');
-  $('.bootstrap-description').addClass('hidden');
-});
-///////////////////////////////////////////////////////////////////////////////
+//handle clicks
+function handleClick(e){
+  try{
+    switch(e.target.nextElementSibling.innerText){
+      case 'React.js':
+        hidden(true);
+        d.innerText = skills.react;
+        hidden(false);
+        break;
+      case 'Node.js':
+        hidden(true);
+        d.innerText = skills.node;
+        hidden(false);
+        break;
+      case 'MongoDB':
+        hidden(true);
+        d.innerText = skills.mongo;
+        hidden(false);
+        break;
+      case 'Docker':
+        hidden(true);
+        d.innerText = skills.docker;
+        hidden(false);
+      break;
+      case 'GitHub':
+        hidden(true);
+        d.innerText = skills.github;
+        hidden(false);
+      break;
+      case 'Git':
+        hidden(true);
+        d.innerText = skills.git;
+        hidden(false);
+      break;
+      case 'Stripe':
+        hidden(true);
+        d.innerText = skills.stripe;
+        hidden(false);
+      break;
+      case 'Digital Ocean':
+        hidden(true);
+        d.innerText = skills.digitalOcean;
+        hidden(false);
+      break;
+      case 'Bootstrap':
+        hidden(true);
+        d.innerText = skills.bootstrap;
+        hidden(false);
+      break;
+      default:
+      console.log("none selected")
+    }
+  }catch{
+    console.log("You might be clicking a little too fast!")
+  }
+}
