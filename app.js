@@ -57,8 +57,8 @@ const x = document.getElementById('close-btn');
 x.addEventListener('click', (e) =>{
   hidden(true)
 });
-console.log(typeof i)
 
+//Nodelist has its own forEach
 i.forEach(icon => {
   icon.addEventListener('click', (e) => {
     handleClick(e)
@@ -126,3 +126,5 @@ function handleClick(e){
     console.log("You might be clicking a little too fast!")
   }
 }
+
+console.log("Hey, what're you doing here? Who let you use the dev console?")
