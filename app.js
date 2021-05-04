@@ -9,7 +9,7 @@ window.onload = () => {
     origami[0].classList.add('animate__wobble');
   }, 1000);
 
-  //carousel with custom settings
+  //initiate carousel
   const myCarousel = document.getElementById('myCarousel');
   const carousel = new bootstrap.Carousel(myCarousel, {
     slide: true,
@@ -27,9 +27,7 @@ window.onload = () => {
 
 
 
-//carousel functionality
-let icons = document.querySelectorAll('.tech-icon');
-
+//carousel logic
 
 const skills = {
   "react": "React.js is a front-end Javascript library that is made for building user interfaces. It was created and is maintained by Facebook.",
@@ -51,15 +49,17 @@ const skills = {
   "bootstrap": "Bootstrap is a web development library that uses prebuilt components to simplify the design process and speed up development.",
 }
 
+const i = document.querySelectorAll('.tech-icon');
 const d = document.getElementById('description');
-let x = document.getElementById('close-btn');
+const x = document.getElementById('close-btn');
 
 //add event listener to close button
 x.addEventListener('click', (e) =>{
   hidden(true)
 });
+console.log(typeof i)
 
-icons.forEach(icon => {
+i.forEach(icon => {
   icon.addEventListener('click', (e) => {
     handleClick(e)
   })
