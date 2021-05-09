@@ -29,7 +29,7 @@ window.onload = () => {
 
 //carousel logic
 
-const skills = {
+const skills = Object.freeze({
   react() {
     return "React.js is a front-end Javascript library that is made for building user interfaces. It was created and is maintained by Facebook."
   },
@@ -57,7 +57,7 @@ const skills = {
   bootstrap() {
     return "Bootstrap is a web development library that uses prebuilt components to simplify the design process and speed up development."
   }
-}
+});
 
 const i = document.querySelectorAll('.tech-icon');
 const d = document.getElementById('description');
