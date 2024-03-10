@@ -24,7 +24,7 @@ body {
 .main {
     padding: 20px;
     background: #050A30;
-    width: 90%;
+    margin: 10px;
     border-radius: 10px;
 }
 
