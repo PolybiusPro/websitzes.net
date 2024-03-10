@@ -12,6 +12,13 @@
   }
 }
 
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
 /* media queries */
 /* X-Small devices (portrait phones, less than 576px) */
 @media screen and (max-width: 600px) {
