@@ -18,6 +18,7 @@ body {
     align-items: center;
     height: 100vh;
     background: #191970 url("../asfalt-light.png");
+    background-size: contain;
     text-align: center;
 }
 
