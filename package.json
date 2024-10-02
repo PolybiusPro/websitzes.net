@@ -3,6 +3,10 @@
     "bootstrap": "^5.3.3"
   },
   "scripts": {
-    "watch-scss": "sass --watch ./scss/styles.scss ./css/styles.css"
+    "watch-scss": "sass --watch ./scss/styles.scss ./css/styles.css",
+    "start": "http-server"
+  },
+  "devDependencies": {
+    "http-server": "^14.1.1"
   }
 }
