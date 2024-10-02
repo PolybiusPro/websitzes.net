@@ -1,0 +1,112 @@
+/* imports */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap");
+
+@import "./variables.scss";
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: "Ubuntu", sans-serif;
+}
+
+body {
+    /* display: flex;
+    justify-content: center;
+    align-items: center;*/
+    padding-bottom: 100vh;
+    background: linear-gradient(
+        to bottom right,
+        $nero 0%,
+        $blue 29.7%,
+        $violet 63.4%,
+        $vivid-pink 100.1%
+    );
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+}
+
+/* NAV */
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    // transition: 0.3s ease-in-out;
+
+    .navbar-brand {
+        color: #fff;
+        font-family: "Ubuntu", sans-serif;
+        transition: 0.3s ease-in-out;
+        &:hover {
+            color: $navbar-dark-hover-color;
+        }
+    }
+
+    .nav-link {
+        font-family: "Ubuntu", sans-serif;
+        font-size: 1.2rem;
+    }
+
+    .navbar-toggler {
+        &:focus {
+            border-color: #fff;
+            box-shadow: none;
+        }
+    }
+}
+
+@keyframes fadeInOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+#scroll-notify {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    bottom: 30px;
+    i {
+        color: #fff;
+        font-size: 1.75rem;
+        animation: 3s infinite alternate fadeInOut;
+    }
+}
+
+/* CTA */
+
+.cta-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cta {
+    h1,
+    h2 {
+        color: #fff;
+    }
+}
+
+.hide {
+    display: none;
+}
+
+@include media-breakpoint-up(md) {
+    .hide-md {
+        display: none;
+    }
+}
