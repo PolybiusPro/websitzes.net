@@ -1,10 +1,9 @@
 /* imports */
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap");
+@import "bootstrap/scss/bootstrap";
+@import "variables.scss";
 
-@import "./variables.scss";
-
-@import "../node_modules/bootstrap/scss/bootstrap.scss";
 
 
 
@@ -85,6 +84,13 @@ body {
 }
 
 /* CTA */
+
+.webgl {
+    position: fixed;
+    top: 0;
+    left: 0;
+    outline: none;
+}
 
 .cta-container {
     height: 100vh;

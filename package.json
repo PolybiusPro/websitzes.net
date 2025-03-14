@@ -1,12 +1,16 @@
 {
-  "dependencies": {
-    "bootstrap": "^5.3.3"
-  },
-  "scripts": {
-    "watch-scss": "sass --watch ./scss/styles.scss ./css/styles.css",
-    "start": "http-server"
-  },
-  "devDependencies": {
-    "http-server": "^14.1.1"
-  }
+    "dependencies": {
+        "@popperjs/core": "^2.11.8",
+        "bootstrap": "^5.3.3",
+        "three": "^0.174.0"
+    },
+    "scripts": {
+        "dev": "vite",
+        "build": "vite build"
+    },
+    "devDependencies": {
+        "sass": "^1.77.6",
+        "vite": "^6.2.2",
+        "vite-plugin-restart": "^0.4.2"
+    }
 }
