@@ -1,5 +1,6 @@
 import restart from 'vite-plugin-restart';
 import { resolve } from 'path';
+import twig from '@vituum/vite-plugin-twig';
 
 export default {
     root: resolve(__dirname, 'src'), // Sources files (typically where index.html is)
@@ -15,8 +16,12 @@ export default {
         outDir: '../dist', // Output in the dist/ folder
         emptyOutDir: true, // Empty the folder first
         sourcemap: true, // Add sourcemap
+        rollupOptions: {
+            input: ['./src/index.twig.html'],
+        },
     },
     plugins: [
         restart({ restart: ['../static/**'] }), // Restart server on static file change
+        twig(),
     ],
 };

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>
+      WebSitzes.net | Creative Web Solutions
+    </title>
+    <link rel="icon" href="./images/fav.png" />
+  </head>
+  <body>
+    {% include './views/components/navigation.twig' %}
+    <canvas class="webgl"></canvas>
+    <main>
+      {% include './views/components/cta.twig' %}
+      {% include './views/components/timeline.twig' %}
+    </main>
+    <div class="scripts">
+      <script type="module" src="./js/app.js"></script>
+    </div>
+  </body>
+</html>
