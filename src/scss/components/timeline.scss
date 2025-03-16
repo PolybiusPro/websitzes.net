@@ -1,63 +1,63 @@
 .timeline {
-  .scroller {
-    position: relative;
-    width: 3px;
-    height: 100%;
-    background-color: transparent;
-    overflow: hidden;
-    margin: auto;
-    border-radius: 3px;
+    .scroller {
+        position: relative;
+        width: 3px;
+        height: 100%;
+        background-color: transparent;
+        overflow: hidden;
+        margin: auto;
+        border-radius: 3px;
 
-    span {
-      border-radius: 3px;
-      position: absolute;
-      top: -1px;
-      left: 0;
-      background-color: #fff;
-      width: 100%;
-      height: 100%;
-      transform: translateY((-101%));
-      animation: scrollHelper 1s linear infinite;
-      animation-play-state: paused;
-      animation-delay: calc(var(--scroll) * -1s);
-      animation-iteration-count: 1;
-      animation-fill-mode: both;
-    }
+        span {
+            border-radius: 3px;
+            position: absolute;
+            top: -1px;
+            left: 0;
+            background-color: #fff;
+            width: 100%;
+            height: 100%;
+            transform: translateY((-101%));
+            animation: scrollHelper 1s linear infinite;
+            animation-play-state: paused;
+            animation-delay: calc(var(--scroll) * -1s);
+            animation-iteration-count: 1;
+            animation-fill-mode: both;
+        }
 
-    @keyframes scrollHelper {
-      0% {
-        transform: translateY(-100%);
-      }
-      100% {
-        transform: translateY(0%);
-      }
+        @keyframes scrollHelper {
+            0% {
+                transform: translateY(-100%);
+            }
+            100% {
+                transform: translateY(0%);
+            }
+        }
     }
-  }
-  .card {
-    background-color: rgba($abyss, 0.9);
-    backdrop-filter: blur(1px);
-    .card-title {
-      color: #fff;
-    }
-    .card-subtitle {
-      color: #ccc;
-    }
-    .card-text {
-      color: #fff;
-      list-style-type: square;
+    .card {
+        background-color: rgba($abyss, 0.9);
+        backdrop-filter: blur(1px);
+        .card-title {
+            color: #fff;
+        }
+        .card-subtitle {
+            color: #ccc;
+        }
+        .card-text {
+            color: #fff;
+            list-style-type: square;
 
-      li::marker {
-        color: $vivid-pink;
-      }
+            li::marker {
+                color: $vivid-pink;
+            }
+        }
+        svg {
+            position: absolute;
+            left: -$spacer * 2;
+            top: 50%;
+            overflow: visible;
+            circle {
+                fill: $vivid-pink;
+            }
+        }
     }
-    svg {
-      position: absolute;
-      left: -$spacer * 2;
-      top: 50%;
-      overflow: visible;
-      circle {
-        fill: $vivid-pink;
-      }
-    }
-  }
 }

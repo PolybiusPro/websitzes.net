@@ -15,6 +15,7 @@
         "@zackad/prettier-plugin-twig": "^0.15.3",
         "sass": "^1.77.6",
         "vite": "^6.2.2",
+        "vite-plugin-node-polyfills": "^0.23.0",
         "vite-plugin-restart": "^0.4.2"
     }
 }

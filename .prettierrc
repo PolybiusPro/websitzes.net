@@ -1,3 +1,5 @@
 {
-  "plugins": ["@zackad/prettier-plugin-twig"]
+    "plugins": ["@zackad/prettier-plugin-twig"],
+    "tabWidth": 4,
+    "printWidth": 70
 }
