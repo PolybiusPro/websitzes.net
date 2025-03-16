@@ -177,9 +177,9 @@ const reveal = () => {
 
 const progress = () => {
   const scroller = document.querySelector(".scroller");
-  const scrollerTop = scroller.getBoundingClientRect().top;
-  document.body.style.setProperty(
-    "--scroll",
-    1 - (scrollerTop - 100) / (sizes.height * 0.5),
-  );
+  const scrollerOffsetTop = scroller.offsetTop;
+  const scrollerHeight = scroller.offsetHeight;
+  const distance = scrollY + sizes.height - scrollerOffsetTop;
+  const percentage = distance / (sizes.height / 10 + scrollerHeight);
+  document.body.style.setProperty("--scroll", percentage);
 };

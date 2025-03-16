@@ -45,12 +45,19 @@
     .card-text {
       color: #fff;
       list-style-type: square;
+
+      li::marker {
+        color: $vivid-pink;
+      }
     }
     svg {
       position: absolute;
       left: -$spacer * 2;
       top: 50%;
       overflow: visible;
+      circle {
+        fill: $vivid-pink;
+      }
     }
   }
 }
