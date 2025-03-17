@@ -18,7 +18,7 @@ export default {
         emptyOutDir: true, // Empty the folder first
         sourcemap: true, // Add sourcemap
         rollupOptions: {
-            input: ["./src/index.html"],
+            input: ["./src/index.twig.html"],
         },
     },
     plugins: [
