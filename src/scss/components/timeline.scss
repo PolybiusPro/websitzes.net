@@ -35,14 +35,7 @@
     }
     .card {
         backdrop-filter: blur(1px);
-        .card-title {
-            color: #fff;
-        }
-        .card-subtitle {
-            color: #ccc;
-        }
         .card-text {
-            color: #fff;
             list-style-type: square;
 
             li::marker {
