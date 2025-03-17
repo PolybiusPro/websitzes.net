@@ -19,7 +19,15 @@
             {% include './views/components/timeline.twig' %}
             {% include './views/components/gallery.twig' %}
             {% include './views/components/about.twig' %}
+            {% include './views/components/learn.twig' %}
         </main>
+        {% include './views/components/footer.twig' %}
+        <script
+            type="application/json"
+            data-template="./views/components/footer.twig"
+        >
+            { "date": "bar" }
+        </script>
         <div class="scripts">
             <script type="module" src="./js/app.js"></script>
         </div>

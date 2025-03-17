@@ -18,12 +18,16 @@ export default {
         emptyOutDir: true, // Empty the folder first
         sourcemap: true, // Add sourcemap
         rollupOptions: {
-            input: ["./src/index.twig.html"],
+            input: ["./src/index.html"],
         },
     },
     plugins: [
         restart({ restart: ["../static/**"] }), // Restart server on static file change
-        twig(),
+        twig({
+            globals: {
+                date: new Date(),
+            },
+        }),
         nodePolyfills({
             include: ["events"],
         }),

@@ -15,8 +15,11 @@ h5 {
     font-family: "Ubuntu", sans-serif;
 }
 
+.header-shadow {
+    text-shadow: 1px 1px 2px $abyss;
+}
+
 body {
-    padding-bottom: 100vh;
     background: linear-gradient(
         to bottom right,
         $abyss 0%,
@@ -56,3 +59,4 @@ body {
 @import "./scss/components/timeline.scss";
 @import "./scss/components/gallery.scss";
 @import "./scss/components/about.scss";
+@import "./scss/components/learn.scss";
