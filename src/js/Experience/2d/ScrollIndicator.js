@@ -11,9 +11,7 @@ class ScrollIndicator {
     }
 
     update() {
-        if (this.scroll.scrollY <= 200) {
-            this.scrollIndicator.style = `opacity: ${1 - this.scroll.scrollY / 200}`;
-        }
+        this.scrollIndicator.style = `opacity: ${Math.max(1 - this.scroll.scrollY / 200, 0)}`;
     }
 }
 

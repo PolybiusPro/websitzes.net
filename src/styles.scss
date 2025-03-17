@@ -1,10 +1,9 @@
 /* Imports */
+@import "variables.scss";
 // Third party
 @import "bootstrap/scss/bootstrap";
 @import "@fortawesome/fontawesome-free/css/all.min.css";
 
-// Vars and Global
-@import "variables.scss";
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 
@@ -13,44 +12,46 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: "Ubuntu", sans-serif;
+    font-family: "Ubuntu", sans-serif;
 }
 
 body {
-  padding-bottom: 100vh;
-  background: linear-gradient(
-    to bottom right,
-    $abyss 0%,
-    $blue 29.7%,
-    $violet 63.4%,
-    $vivid-pink 100.1%
-  );
-  text-align: center;
-  font-family: "Open Sans", sans-serif;
-  color: #fff;
+    padding-bottom: 100vh;
+    background: linear-gradient(
+        to bottom right,
+        $abyss 0%,
+        $blue 29.7%,
+        $violet 63.4%,
+        $vivid-pink 100.1%
+    );
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+    color: #fff;
 }
 
 .webgl {
-  position: fixed;
-  top: 0;
-  left: 0;
-  outline: none;
-  z-index: -1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    outline: none;
+    z-index: -1;
 }
 
 .reveal {
-  position: relative;
-  transform: translateY(50px);
-  opacity: 0;
-  transition: 1s all ease;
+    position: relative;
+    transform: translateY(50px);
+    opacity: 0;
+    transition: 1s all ease;
 }
 
 .visible {
-  transform: translateY(0);
-  opacity: 1;
+    transform: translateY(0);
+    opacity: 1;
 }
 
 // Components
+@import "./scss/components/buttons.scss";
 @import "./scss/components/navigation.scss";
 @import "./scss/components/cta.scss";
 @import "./scss/components/timeline.scss";
+@import "./scss/components/gallery.scss";

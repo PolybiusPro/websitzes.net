@@ -1,0 +1,39 @@
+.gallery {
+    display: flex;
+    overflow: hidden;
+    height: 100%;
+    position: relative;
+
+    @include media-breakpoint-up(lg) {
+        width: 50vw;
+    }
+
+    > * {
+        flex: 0 0 200%;
+    }
+    .group {
+        display: flex;
+        gap: $spacer * 3;
+        padding-right: $spacer * 3;
+        animation: moveSlideshow 50s linear infinite;
+        .top {
+            margin-bottom: $spacer * 3;
+        }
+        @include media-breakpoint-down(sm) {
+            gap: $spacer;
+            padding-right: $spacer;
+            .top {
+                margin-bottom: $spacer * 1.5;
+            }
+        }
+    }
+}
+
+@keyframes moveSlideshow {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
