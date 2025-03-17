@@ -14,4 +14,4 @@ Run `npm install` to install all dependencies
 
 To turn on the sass compiler and watch for changes run `npm run watch-scss`
 
-To start the app use `npm run start`
+To start the app use `npm run dev`
