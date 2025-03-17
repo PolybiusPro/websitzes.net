@@ -1,0 +1,31 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+
+    .navbar-brand {
+        color: #fff;
+        font-family: "Ubuntu", sans-serif;
+        transition: 0.3s ease-in-out;
+        &:hover {
+            color: $navbar-dark-hover-color;
+        }
+    }
+
+    .nav-link {
+        font-family: "Ubuntu", sans-serif;
+        font-size: 1.2rem;
+        color: #fff;
+        &:hover {
+            color: $navbar-dark-hover-color;
+        }
+    }
+
+    .navbar-toggler {
+        &:focus {
+            border-color: #fff;
+            box-shadow: none;
+        }
+    }
+}

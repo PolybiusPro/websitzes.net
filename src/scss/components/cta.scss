@@ -1,0 +1,29 @@
+.cta-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.scroll-indicator {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    bottom: 30px;
+    i {
+        color: #fff;
+        font-size: 1.75rem;
+        animation: 2s infinite alternate fadeInOut;
+    }
+}
+
+@keyframes fadeInOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}

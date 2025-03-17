@@ -1,0 +1,8 @@
+.about {
+    @include media-breakpoint-up(lg) {
+        width: 55vw;
+    }
+    .card-text {
+        font-size: 1.2rem;
+    }
+}

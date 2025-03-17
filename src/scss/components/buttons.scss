@@ -1,0 +1,10 @@
+.btn-primary {
+    @include button-variant(
+        $violet,
+        darken($violet, 7.5%),
+        $white,
+        lighten($violet, 5%),
+        lighten($violet, 10%),
+        lighten($white, 30%)
+    );
+}
