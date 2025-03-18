@@ -8,11 +8,13 @@
     },
     "scripts": {
         "dev": "vite",
-        "build": "vite build"
+        "build": "vite build",
+        "deploy": "npm run build && gh-pages -d dist"
     },
     "devDependencies": {
         "@vituum/vite-plugin-twig": "^1.1.0",
         "@zackad/prettier-plugin-twig": "^0.15.3",
+        "gh-pages": "^6.3.0",
         "sass": "^1.77.6",
         "vite": "^6.2.2",
         "vite-plugin-node-polyfills": "^0.23.0",
