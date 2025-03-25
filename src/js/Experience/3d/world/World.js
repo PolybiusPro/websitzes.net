@@ -1,5 +1,5 @@
-import { Experience } from "../../Experience";
-import { Shapes } from "./Shapes";
+import { Experience } from "Experience/Main";
+import { Shapes } from "Experience/3d/world/Shapes";
 
 class World {
     constructor() {

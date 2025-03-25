@@ -1,10 +1,9 @@
 import restart from "vite-plugin-restart";
-import { resolve } from "path";
 import twig from "@vituum/vite-plugin-twig";
 import { nodePolyfills } from "vite-plugin-node-polyfills";
 
 export default {
-    root: resolve(__dirname, "src"), // Sources files (typically where index.html is)
+    root: "src/", // Sources files (typically where index.html is)
     publicDir: "../static/", // Path from "root" to static assets (files that are served as they are)
     server: {
         host: true, // Open to local network and display URL
@@ -18,7 +17,7 @@ export default {
         emptyOutDir: true, // Empty the folder first
         sourcemap: true, // Add sourcemap
         rollupOptions: {
-            input: ["./src/index.twig.html"],
+            input: ["src/index.twig.html"],
         },
     },
     plugins: [
@@ -32,4 +31,9 @@ export default {
             include: ["events"],
         }),
     ],
+    resolve: {
+        alias: {
+            Experience: "/js/Experience",
+        },
+    },
 };

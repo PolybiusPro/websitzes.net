@@ -9,7 +9,7 @@
     "scripts": {
         "dev": "vite",
         "build": "vite build",
-        "deploy": "npm run build && gh-pages -d dist"
+        "deploy": "npm run build && cp CNAME ./dist/ && gh-pages -d dist"
     },
     "devDependencies": {
         "@vituum/vite-plugin-twig": "^1.1.0",

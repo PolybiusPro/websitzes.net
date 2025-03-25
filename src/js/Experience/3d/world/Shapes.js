@@ -5,7 +5,7 @@ import {
     Mesh,
     MeshMatcapMaterial,
 } from "three";
-import { Experience } from "../../Experience";
+import { Experience } from "Experience/Main";
 
 class Shapes {
     constructor() {

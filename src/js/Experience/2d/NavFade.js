@@ -1,4 +1,4 @@
-import { Experience } from "../Experience";
+import { Experience } from "Experience/Main";
 
 class NavFade {
     constructor() {

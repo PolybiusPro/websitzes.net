@@ -1,5 +1,5 @@
 import { WebGLRenderer } from "three";
-import { Experience } from "../Experience";
+import { Experience } from "Experience/Main";
 
 class Renderer {
     constructor() {

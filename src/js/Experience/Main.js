@@ -1,16 +1,16 @@
 import { Scene } from "three";
-import { Sizes } from "./utils/Sizes";
-import { Time } from "./utils/Time";
-import { Scroll } from "./utils/Scroll";
-import { Renderer } from "./3d/Renderer";
-import { Camera } from "./3d/Camera";
-import { Resources } from "./utils/Resources";
-import { World } from "./3d/world/World";
-import sources from "./3d/sources";
-import { Timeline } from "./2d/Timeline";
-import { Fade } from "./2d/Fade";
-import { ScrollIndicator } from "./2d/ScrollIndicator";
-import { NavFade } from "./2d/NavFade";
+import { Sizes } from "Experience/utils/Sizes";
+import { Time } from "Experience/utils/Time";
+import { Scroll } from "Experience/utils/Scroll";
+import { Renderer } from "Experience/3d/Renderer";
+import { Camera } from "Experience/3d/Camera";
+import { Resources } from "Experience/utils/Resources";
+import { World } from "Experience/3d/world/World";
+import sources from "Experience/3d/sources";
+import { Timeline } from "Experience/2d/Timeline";
+import { Fade } from "Experience/2d/Fade";
+import { ScrollIndicator } from "Experience/2d/ScrollIndicator";
+import { NavFade } from "Experience/2d/NavFade";
 
 let instance = null;
 
