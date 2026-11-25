@@ -3,3 +3,5 @@ allowBuilds:
 ignoredOptionalDependencies:
     - "@parcel/watcher"
 minimumReleaseAge: 10080
+minimumReleaseAgeExclude:
+    - "bootstrap@6.0.0-alpha.2"

@@ -18,6 +18,7 @@ export default {
         sourcemap: true, // Add sourcemap
         rollupOptions: {
             input: ["src/index.twig.html"],
+            external: ["node_modules/bootstrap/js/drawer.js"],
         },
     },
     plugins: [
