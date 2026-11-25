@@ -1,6 +1,9 @@
+@use "../bootstrap-tools" as *;
+@use "../../variables" as v;
+
 .learn {
     margin: $spacer * 5 auto;
     h3 {
-        color: $vivid-pink;
+        color: v.$vivid-pink;
     }
 }

@@ -1,5 +1,5 @@
 import "/styles.scss";
-import "bootstrap";
+import "bootstrap/js/dist/drawer.js";
 import { Experience } from "Experience/Main";
 
 const experience = new Experience(

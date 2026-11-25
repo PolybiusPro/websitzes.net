@@ -1,0 +1,6 @@
+// The few Bootstrap members the components use. Components load this partial
+// instead of Bootstrap itself. Bootstrap is loaded and configured once in
+// styles.scss, so these resolve to that same configured instance.
+@forward "bootstrap/scss/config" show $spacer;
+@forward "bootstrap/scss/colors" show $white;
+@forward "bootstrap/scss/layout/breakpoints" show media-breakpoint-up, media-breakpoint-down;

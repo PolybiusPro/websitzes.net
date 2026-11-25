@@ -1,7 +1,28 @@
 /* Imports */
-@import "variables.scss";
+@use "variables";
 // Third party
-@import "bootstrap/scss/bootstrap";
+@use "bootstrap/scss/bootstrap" with (
+    $blue: variables.$blue,
+    $drawer-tokens: (
+        --drawer-bg: variables.$offcanvas-bg-color,
+    ),
+    $navbar-dark-tokens: (
+        --navbar-color: variables.$navbar-dark-color,
+    ),
+    $card-tokens: (
+        --card-bg: variables.$card-bg,
+        --card-color: variables.$card-color,
+        --card-subtitle-color: variables.$card-subtitle-color,
+    )
+);
+// Components
+@use "scss/components/buttons";
+@use "scss/components/navigation";
+@use "scss/components/cta";
+@use "scss/components/timeline";
+@use "scss/components/gallery";
+@use "scss/components/about";
+@use "scss/components/learn";
 @import "@fortawesome/fontawesome-free/css/all.min.css";
 
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap");
@@ -16,16 +37,16 @@ h5 {
 }
 
 .header-shadow {
-    text-shadow: 1px 1px 2px $abyss;
+    text-shadow: 1px 1px 2px variables.$abyss;
 }
 
 body {
     background: linear-gradient(
         to bottom right,
-        $abyss 0%,
-        $blue 29.7%,
-        $violet 63.4%,
-        $vivid-pink 100.1%
+        variables.$abyss 0%,
+        variables.$blue 29.7%,
+        variables.$violet 63.4%,
+        variables.$vivid-pink 100.1%
     );
     text-align: center;
     font-family: "Open Sans", sans-serif;
@@ -51,12 +72,3 @@ body {
     transform: translateY(0);
     opacity: 1;
 }
-
-// Components
-@import "/scss/components/buttons.scss";
-@import "/scss/components/navigation.scss";
-@import "/scss/components/cta.scss";
-@import "/scss/components/timeline.scss";
-@import "/scss/components/gallery.scss";
-@import "/scss/components/about.scss";
-@import "/scss/components/learn.scss";

@@ -9,7 +9,7 @@
         font-family: "Ubuntu", sans-serif;
         transition: 0.3s ease-in-out;
         &:hover {
-            color: $navbar-dark-hover-color;
+            color: rgba(255, 255, 255, 0.75);
         }
     }
 
@@ -18,7 +18,7 @@
         font-size: 1.2rem;
         color: #fff;
         &:hover {
-            color: $navbar-dark-hover-color;
+            color: rgba(255, 255, 255, 0.75);
         }
     }
 

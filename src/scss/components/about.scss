@@ -1,3 +1,5 @@
+@use "../bootstrap-tools" as *;
+
 .about {
     @include media-breakpoint-up(lg) {
         width: 55vw;

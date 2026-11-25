@@ -1,10 +1,16 @@
+@use "sass:color";
+@use "../bootstrap-tools" as *;
+@use "../../variables" as v;
+
 .btn-primary {
-    @include button-variant(
-        $violet,
-        darken($violet, 7.5%),
-        $white,
-        lighten($violet, 5%),
-        lighten($violet, 10%),
-        lighten($white, 30%)
-    );
+    --btn-color: #{$white};
+    --btn-bg: #{v.$violet};
+    --btn-border-color: #{color.adjust(v.$violet, $lightness: -7.5%)};
+    --btn-hover-color: #{$white};
+    --btn-hover-bg: #{color.adjust(v.$violet, $lightness: 5%)};
+    --btn-hover-border-color: #{color.adjust(v.$violet, $lightness: 10%)};
+    --btn-active-color: #{$white};
+    --btn-active-bg: #{color.scale($white, $lightness: 30%)};
+    --btn-active-border-color: #{color.adjust(v.$violet, $lightness: 10%)};
+    font-family: v.$input-btn-font-family;
 }

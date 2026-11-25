@@ -1,3 +1,6 @@
+@use "../bootstrap-tools" as *;
+@use "../../variables" as v;
+
 .timeline {
     .scroller {
         position: relative;
@@ -39,7 +42,7 @@
             list-style-type: square;
 
             li::marker {
-                color: $vivid-pink;
+                color: v.$vivid-pink;
             }
         }
         svg {
@@ -48,7 +51,7 @@
             top: 50%;
             overflow: visible;
             circle {
-                fill: $vivid-pink;
+                fill: v.$vivid-pink;
             }
         }
     }
