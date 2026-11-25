@@ -1,6 +1,5 @@
 {
     "compilerOptions": {
-        "baseUrl": ".",
         "paths": {
             "Experience/*": ["./src/js/Experience/*"]
         }
