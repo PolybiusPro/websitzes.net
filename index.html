@@ -20,12 +20,12 @@
             websitzes.net | Creative Web Solutions
         </title>
         <link rel="icon" href="/images/fav.png" />
-      <script type="module" crossorigin src="/assets/index.twig-pCWvq1er.js"></script>
-      <link rel="stylesheet" crossorigin href="/assets/index-C1Zhw8pj.css">
+      <script type="module" crossorigin src="/assets/index.twig-CwV_5DZE.js"></script>
+      <link rel="stylesheet" crossorigin href="/assets/index-CjUWCYfr.css">
     </head>
     <body>
         <nav
-    class="navbar navbar-expand-md"
+    class="navbar md:navbar-expand"
     style="background: transparent"
     data-bs-theme="dark"
 >
@@ -34,61 +34,66 @@
         <button
             class="navbar-toggler"
             type="button"
-            data-bs-toggle="offcanvas"
+            data-bs-toggle="drawer"
             data-bs-target="#navbarNav"
             aria-controls="navbarNav"
-            aria-expanded="false"
             aria-label="Toggle navigation"
         >
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="offcanvas offcanvas-end w-75" id="navbarNav">
-            <div class="offcanvas-header">
+        <dialog
+            class="md:drawer drawer-end w-75"
+            id="navbarNav"
+            aria-label="Navigation"
+        >
+            <div class="drawer-header">
                 <button
                     type="button"
                     class="btn-close"
-                    data-bs-dismiss="offcanvas"
+                    data-bs-dismiss="drawer"
                     aria-label="Close"
                 >
 
                 </button>
             </div>
-            <ul class="navbar-nav ms-md-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="#my-work">My Work</a>
-                </li>
-                <li class="nav-item">
-                    <a
-                        class="nav-link"
-                        href="https://www.linkedin.com/in/weston-sitzes/"
-                        aria-label="Linked In"
-                    >
-                        <span class="d-md-none">
-                            Linked <span class="d-none">In</span>
-                        </span><i class="fab fa-linkedin"></i>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a
-                        class="nav-link"
-                        href="https://github.com/PolybiusPro"
-                        aria-label="Git Hub"
-                    >
-                        <span class="d-md-none">GitHub</span><i class="fab fa-github"></i>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a
-                        class="nav-link"
-                        href="mailto:wes@websitzes.net"
-                        aria-label="Email"
-                    >
-                        <span class="d-md-none">Email</span>
-                        <i class="fas fa-envelope"></i>
-                    </a>
-                </li>
-            </ul>
-        </div>
+            <div class="drawer-body">
+                <ul class="navbar-nav md:ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#my-work">My Work</a>
+                    </li>
+                    <li class="nav-item">
+                        <a
+                            class="nav-link"
+                            href="https://www.linkedin.com/in/weston-sitzes/"
+                            aria-label="Linked In"
+                        >
+                            <span class="md:d-none">
+                                Linked <span class="d-none">In</span>
+                            </span><i class="fab fa-linkedin"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a
+                            class="nav-link"
+                            href="https://github.com/PolybiusPro"
+                            aria-label="Git Hub"
+                        >
+                            <span class="md:d-none">GitHub</span><i class="fab fa-github"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a
+                            class="nav-link"
+                            href="mailto:wes@websitzes.net"
+                            aria-label="Email"
+                        >
+                            <span class="md:d-none">Email</span>
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </dialog>
     </div>
 </nav>
         <canvas class="webgl"></canvas>
@@ -109,7 +114,7 @@
 <div class="scroll-indicator">
     <i class="fas fa-chevron-down"></i>
 </div>
-            <section id="my-work" class="container-sm">
+            <section id="my-work" class="sm:container">
     <h1 class="header-shadow mb-5">My Work</h1>
     <div class="timeline d-flex justify-content-center mx-auto">
         <div class="ms-1 me-4 scroller-container">
@@ -180,7 +185,7 @@
         </div>
     </div>
 </section>
-            <section class="container-sm mt-5">
+            <section class="sm:container mt-5">
     <div class="gallery mx-auto rounded reveal">
         <div class="group">
             <div class="item">
@@ -332,7 +337,7 @@
         </div>
     </div>
 </section>
-            <section class="container-sm about reveal">
+            <section class="sm:container about reveal">
     <div class="card mt-5">
         <div class="card-body">
             <h1 class="card-title">About Me</h1>
@@ -353,7 +358,7 @@
     </div>
 </section>
             <section
-    class="container-sm learn d-flex flex-column justify-content-center reveal"
+    class="sm:container learn d-flex flex-column justify-content-center reveal"
 >
     <h1 class="header-shadow mb-2">Learn More</h1>
     <h4 class="header-shadow mb-5">
@@ -382,7 +387,7 @@
         </main>
         <footer>
     <p>
-        &copy; 2025 Wes Sitzes
+        &copy; 2026 Wes Sitzes
     </p>
 </footer>
         <script
