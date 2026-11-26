@@ -1,3 +1,5 @@
+@use "../../variables" as v;
+
 .navbar {
     position: fixed;
     top: 0;
@@ -5,26 +7,26 @@
     z-index: 10;
 
     .navbar-brand {
-        color: #fff;
+        color: v.$fg;
         font-family: "Bitcount Single", sans-serif;
         transition: 0.3s ease-in-out;
         &:hover {
-            color: rgba(255, 255, 255, 0.75);
+            color: rgba(v.$fg, 0.75);
         }
     }
 
     .nav-link {
         font-family: "Ubuntu", sans-serif;
         font-size: 1.2rem;
-        color: #fff;
+        color: v.$fg;
         &:hover {
-            color: rgba(255, 255, 255, 0.75);
+            color: rgba(v.$fg, 0.75);
         }
     }
 
     .navbar-toggler {
         &:focus {
-            border-color: #fff;
+            border-color: v.$fg;
             box-shadow: none;
         }
     }

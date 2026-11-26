@@ -9,9 +9,9 @@ class NavFade {
 
     update() {
         if (this.scroll.scrollY <= 200) {
-            this.navbar.style = `background-color: rgba(0, 0, 51, ${this.scroll.scrollY / 200})`;
+            this.navbar.style = `background-color: rgba(33, 35, 41, ${this.scroll.scrollY / 200})`;
         } else {
-            this.navbar.style = "background-color: rgb(0, 0, 51)";
+            this.navbar.style = "background-color: rgb(33, 35, 41)";
         }
     }
 }

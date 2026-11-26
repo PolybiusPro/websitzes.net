@@ -1,15 +1,16 @@
-// CUSTOM
-$abyss: #000033;
-$blue: #080099;
-$violet: #7606a6;
-$vivid-pink: #f706cf;
+// CUSTOM (Layan palette)
+$abyss: #212329;
+$blue: #5657f5;
+$violet: #e040fb;
+$vivid-pink: #ff80e0;
+$fg: #eaeaea;
 
 // OVERRIDES
-$offcanvas-bg-color: #000033;
-$navbar-dark-color: #fff;
+$offcanvas-bg-color: $abyss;
+$navbar-dark-color: $fg;
 $navbar-dark-toggler-border-color: transparent;
 $input-btn-font-family: "Open Sans", sans-serif;
 $card-bg: rgba($abyss, 0.9);
-$card-title-color: #fff;
+$card-title-color: $fg;
 $card-subtitle-color: $vivid-pink;
-$card-color: #fff;
+$card-color: $fg;

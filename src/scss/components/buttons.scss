@@ -4,13 +4,13 @@
 
 .btn-primary {
     --btn-color: #{$white};
-    --btn-bg: #{v.$violet};
-    --btn-border-color: #{color.adjust(v.$violet, $lightness: -7.5%)};
+    --btn-bg: #{v.$blue};
+    --btn-border-color: #{color.adjust(v.$blue, $lightness: -7.5%)};
     --btn-hover-color: #{$white};
-    --btn-hover-bg: #{color.adjust(v.$violet, $lightness: 5%)};
-    --btn-hover-border-color: #{color.adjust(v.$violet, $lightness: 10%)};
+    --btn-hover-bg: #{color.adjust(v.$blue, $lightness: 5%)};
+    --btn-hover-border-color: #{color.adjust(v.$blue, $lightness: 10%)};
     --btn-active-color: #{$white};
     --btn-active-bg: #{color.scale($white, $lightness: 30%)};
-    --btn-active-border-color: #{color.adjust(v.$violet, $lightness: 10%)};
+    --btn-active-border-color: #{color.adjust(v.$blue, $lightness: 10%)};
     font-family: v.$input-btn-font-family;
 }
