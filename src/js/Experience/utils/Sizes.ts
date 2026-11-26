@@ -1,6 +1,10 @@
 import { EventEmitter } from "node:events";
 
 class Sizes extends EventEmitter {
+    width: number;
+    height: number;
+    pixelRatio: number;
+
     constructor() {
         super();
 

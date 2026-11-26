@@ -1,8 +1,20 @@
-import { TextureLoader } from "three";
+import { TextureLoader, type Texture } from "three";
 import EventEmitter from "node:events";
 
+export interface Source {
+    name: string;
+    type: "texture";
+    path: string;
+}
+
 class Resources extends EventEmitter {
-    constructor(sources) {
+    sources: Source[];
+    items: Record<string, Texture>;
+    toLoad: number;
+    loaded: number;
+    loaders!: { textureLoader: TextureLoader };
+
+    constructor(sources: Source[]) {
         super();
 
         // Options
@@ -41,7 +53,7 @@ class Resources extends EventEmitter {
         }
     }
 
-    sourceLoaded(source, file) {
+    sourceLoaded(source: Source, file: Texture) {
         this.items[source.name] = file;
 
         this.loaded++;

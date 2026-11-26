@@ -2,13 +2,14 @@ import { PerspectiveCamera } from "three";
 import { Experience } from "Experience/Main";
 
 class Camera {
-    constructor() {
-        this.experience = new Experience();
-        this.sizes = this.experience.sizes;
-        this.scene = this.experience.scene;
-        this.canvas = this.experience.canvas;
-        this.scroll = this.experience.scroll;
+    experience = new Experience();
+    sizes = this.experience.sizes;
+    scene = this.experience.scene;
+    canvas = this.experience.canvas;
+    scroll = this.experience.scroll;
+    instance!: PerspectiveCamera;
 
+    constructor() {
         this.setInstance();
     }
 

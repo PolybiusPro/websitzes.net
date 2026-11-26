@@ -1,8 +1,9 @@
+import { defineConfig } from "vite";
 import restart from "vite-plugin-restart";
 import twig from "@vituum/vite-plugin-twig";
 import { nodePolyfills } from "vite-plugin-node-polyfills";
 
-export default {
+export default defineConfig({
     root: "src/", // Sources files (typically where index.html is)
     publicDir: "../static/", // Path from "root" to static assets (files that are served as they are)
     server: {
@@ -18,7 +19,7 @@ export default {
         sourcemap: true, // Add sourcemap
         rollupOptions: {
             input: ["src/index.twig.html"],
-            external: ["node_modules/bootstrap/js/drawer.js"],
+            external: "node_modules/bootstrap/js/drawer.js",
         },
     },
     plugins: [
@@ -37,4 +38,4 @@ export default {
             Experience: "/js/Experience",
         },
     },
-};
+});

@@ -1,6 +1,8 @@
 import { EventEmitter } from "node:events";
 
 class Scroll extends EventEmitter {
+    scrollY: number;
+
     constructor() {
         super();
 

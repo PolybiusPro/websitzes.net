@@ -8,17 +8,20 @@ import {
 import { Experience } from "Experience/Main";
 
 class Shapes {
+    experience = new Experience();
+    scene = this.experience.scene;
+    resources = this.experience.resources;
+    time = this.experience.time;
+
+    cubeGeometry = new BoxGeometry(0.5, 0.5, 0.5);
+    coneGeometry = new ConeGeometry(0.5, 1, 4);
+    torusGeometry = new TorusGeometry(0.5, 0.2, 16, 32);
+    resource = this.resources.items.neonMatcap;
+
+    material!: MeshMatcapMaterial;
+    meshes!: Mesh[];
+
     constructor() {
-        this.experience = new Experience();
-        this.scene = this.experience.scene;
-        this.resources = this.experience.resources;
-        this.time = this.experience.time;
-
-        this.cubeGeometry = new BoxGeometry(0.5, 0.5, 0.5);
-        this.coneGeometry = new ConeGeometry(0.5, 1, 4);
-        this.torusGeometry = new TorusGeometry(0.5, 0.2, 16, 32);
-        this.resource = this.resources.items.neonMatcap;
-
         this.setMaterials();
         this.setModels();
     }

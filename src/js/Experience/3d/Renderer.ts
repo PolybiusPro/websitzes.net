@@ -2,13 +2,14 @@ import { WebGLRenderer } from "three";
 import { Experience } from "Experience/Main";
 
 class Renderer {
-    constructor() {
-        this.experience = new Experience();
-        this.canvas = this.experience.canvas;
-        this.sizes = this.experience.sizes;
-        this.scene = this.experience.scene;
-        this.camera = this.experience.camera;
+    experience = new Experience();
+    canvas = this.experience.canvas;
+    sizes = this.experience.sizes;
+    scene = this.experience.scene;
+    camera = this.experience.camera;
+    instance!: WebGLRenderer;
 
+    constructor() {
         this.setInstance();
     }
 

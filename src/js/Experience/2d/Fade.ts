@@ -1,11 +1,10 @@
 import { Experience } from "Experience/Main";
 
 class Fade {
-    constructor() {
-        this.experience = new Experience();
-        this.sizes = this.experience.sizes;
-        this.reveals = document.querySelectorAll(".reveal");
-    }
+    experience = new Experience();
+    sizes = this.experience.sizes;
+    reveals = document.querySelectorAll<HTMLElement>(".reveal");
+
     update() {
         for (const reveal of this.reveals) {
             const elementTop = reveal.getBoundingClientRect().top;

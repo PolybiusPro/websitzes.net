@@ -2,6 +2,11 @@ import { EventEmitter } from "node:events";
 import { Clock } from "three";
 
 class Time extends EventEmitter {
+    clock: Clock;
+    timestamp: number;
+    elapsed = 0;
+    delta = 0;
+
     constructor() {
         super();
 

@@ -12,12 +12,34 @@ import { Fade } from "Experience/2d/Fade";
 import { ScrollIndicator } from "Experience/2d/ScrollIndicator";
 import { NavFade } from "Experience/2d/NavFade";
 
-let instance = null;
+let instance: Experience | null = null;
 
 class Experience {
-    constructor(canvas) {
+    // Assigned on first creation. Later calls return the existing instance
+    // early, which TypeScript can't see, hence the definite assignments.
+    canvas!: HTMLCanvasElement;
+    sizes!: Sizes;
+    time!: Time;
+    scroll!: Scroll;
+    resources!: Resources;
+    scene!: Scene;
+    camera!: Camera;
+    renderer!: Renderer;
+    world!: World;
+    navFade!: NavFade;
+    fade!: Fade;
+    timeline!: Timeline;
+    scrollIndicator!: ScrollIndicator;
+
+    // The first call creates the singleton and needs a canvas. Later calls
+    // return that same instance and ignore the argument.
+    constructor(canvas?: HTMLCanvasElement) {
         if (instance) {
             return instance;
+        }
+
+        if (!canvas) {
+            throw new Error("Experience needs a canvas on first creation");
         }
 
         instance = this;

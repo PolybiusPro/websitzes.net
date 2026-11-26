@@ -1,11 +1,9 @@
 import { Experience } from "Experience/Main";
 
 class NavFade {
-    constructor() {
-        this.experience = new Experience();
-        this.scroll = this.experience.scroll;
-        this.navbar = document.querySelector(".navbar");
-    }
+    experience = new Experience();
+    scroll = this.experience.scroll;
+    navbar = document.querySelector<HTMLElement>(".navbar")!;
 
     update() {
         if (this.scroll.scrollY <= 200) {

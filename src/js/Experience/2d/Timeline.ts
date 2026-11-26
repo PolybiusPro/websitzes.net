@@ -1,13 +1,10 @@
 import { Experience } from "Experience/Main";
 
 class Timeline {
-    constructor() {
-        this.experience = new Experience();
-        this.sizes = this.experience.sizes;
-        this.scroll = this.experience.scroll;
-
-        this.scroller = document.querySelector(".scroller");
-    }
+    experience = new Experience();
+    sizes = this.experience.sizes;
+    scroll = this.experience.scroll;
+    scroller = document.querySelector<HTMLElement>(".scroller")!;
 
     update() {
         const scrollerOffsetTop = this.scroller.offsetTop;
@@ -18,7 +15,7 @@ class Timeline {
             scrollerOffsetTop;
         const percentage =
             distance / (this.sizes.height / 10 + scrollerHeight);
-        document.body.style.setProperty("--scroll", percentage);
+        document.body.style.setProperty("--scroll", String(percentage));
     }
 }
 
