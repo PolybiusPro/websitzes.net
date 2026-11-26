@@ -1,26 +1,24 @@
 import { EventEmitter } from "node:events";
-import { Clock } from "three";
+import { Timer } from "three";
 
 class Time extends EventEmitter {
-    clock: Clock;
-    timestamp: number;
+    timer: Timer;
     elapsed = 0;
     delta = 0;
 
     constructor() {
         super();
 
-        this.clock = new Clock();
-        this.timestamp = 0;
+        this.timer = new Timer();
 
         window.requestAnimationFrame(() => {
             this.tick();
         });
     }
     tick() {
-        this.elapsed = this.clock.getElapsedTime();
-        this.delta = this.elapsed - this.timestamp;
-        this.timestamp = this.elapsed;
+        this.timer.update();
+        this.elapsed = this.timer.getElapsed();
+        this.delta = this.timer.getDelta();
 
         this.emit("tick");
 
