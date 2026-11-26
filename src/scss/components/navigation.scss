@@ -8,6 +8,7 @@
 
     .navbar-brand {
         color: v.$fg;
+        font-size: 1.25rem;
         font-family: "Bitcount Single", sans-serif;
         transition: 0.3s ease-in-out;
         &:hover {
@@ -17,10 +18,14 @@
 
     .nav-link {
         font-family: "Ubuntu", sans-serif;
-        font-size: 1.2rem;
+        font-size: 1.25rem;
         color: v.$fg;
         &:hover {
             color: rgba(v.$fg, 0.75);
+        }
+        .fab,
+        .fas {
+            line-height: unset;
         }
     }
 
